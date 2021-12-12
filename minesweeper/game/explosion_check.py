@@ -9,6 +9,10 @@ o	If it is not a bomb it will also check to see how many bombs are touching the 
     '''
 
     def check_right(location):
+        """
+        This function is used to add and remove flags and questionmarks in a right click event.
+        
+        """
         
         if constants.MINE_FIELD[location] == "f":
             constants.MINE_FIELD[location] = "?" 
@@ -29,8 +33,13 @@ o	If it is not a bomb it will also check to see how many bombs are touching the 
                 return "f"
 
     def check_left(location, row, column): 
-        print (f"Location: {location}, Row: {row}, Column: {column}") # FOR TESTING REMOVE
+        #print (f"Location: {location}, Row: {row}, Column: {column}") # FOR TESTING REMOVE
         #is it a bomb?
+        """
+        
+        Checks the value of the mine fields and bombs  and compares it to the section that was clicked if the left clisk is used. 
+        
+        """
         
         if constants.MINE_FIELD[location] == "f":
             return "flag"

@@ -54,7 +54,7 @@ class SetupBoard(arcade.View):
                     mine_count -= 1
 
     def create_minefield(self, grid_size):
-        print(f"Gridsize: {grid_size}")
+        #print(f"Gridsize: {grid_size}")
         for i in range(grid_size):
             constants.MINE_FIELD.append("n")
 

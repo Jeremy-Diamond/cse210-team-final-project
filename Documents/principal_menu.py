@@ -51,7 +51,7 @@ class PrincipalMenuView(arcade.View):
 
         
     def click_level_view(self, event):
-        print(event)
+        #print(event)
         self.on_mouse_press()
                        
     def on_draw(self):

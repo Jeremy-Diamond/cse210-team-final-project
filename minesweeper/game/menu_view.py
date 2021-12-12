@@ -63,22 +63,22 @@ class MenuView(arcade.View):
         )
 
     def on_click_easy(self, event):
-        print("easy:", event)
+        #print("easy:", event)
         SetupBoard("easy")
-        print(constants.MINE_LOCATIONS)
-        print(constants.MINE_FIELD)
+        #print(constants.MINE_LOCATIONS)
+        #print(constants.MINE_FIELD)
 
     def on_click_medium(self, event):
-        print("Medium:", event)        
+        #print("Medium:", event)        
         SetupBoard("medium")
-        print(constants.MINE_LOCATIONS)
-        print(constants.MINE_FIELD)
+        #print(constants.MINE_LOCATIONS)
+        #print(constants.MINE_FIELD)
 
     def on_click_hard(self, event):
-        print("Hard:", event)
+        #print("Hard:", event)
         SetupBoard("hard")
-        print(constants.MINE_LOCATIONS)
-        print(constants.MINE_FIELD)
+        #print(constants.MINE_LOCATIONS)
+        #print(constants.MINE_FIELD)
 
 
     def on_draw(self):

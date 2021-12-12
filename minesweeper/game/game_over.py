@@ -14,7 +14,6 @@ class GameOver(arcade.View):
     def __init__(self, time):
         super().__init__()
         self.time_taken = time
-        print("game overrrrrr")
         
         self.on_draw()
 
@@ -40,5 +39,7 @@ class GameOver(arcade.View):
         
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
+        constants.MINE_LOCATIONS = []
+        constants.MINE_FIELD = []
         game_view = menu_view.MenuView()
         self.window.show_view(game_view)
